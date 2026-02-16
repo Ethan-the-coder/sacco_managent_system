@@ -14,12 +14,32 @@
 /*}*/
 
 /*profile.html*/
+body{
+  background-color: #0b5ed7;
+}
+.container{
+  background-color: #997404;
+}
 #profile h1{
   max-width: 100px;
+  background-color:goldenrod;
+}
+textarea{
+  max-height: 10px;
+  max-width: 1000px;
 }
 /*about.html*/
 
 /*member_details.html*/
+.container{
+  background-color: goldenrod;
+}
+input{
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+}
+
 
 /*member_list.html*/
 
