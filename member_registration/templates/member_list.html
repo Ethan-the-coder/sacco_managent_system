@@ -1,57 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Members</title>
-      <link rel="stylesheet" href="../../static/assets/styles/bootstrap/css/bootstrap.css">
-      <link rel="stylesheet" href="../../static/assets/styles/main.css">
-</head>
-<body>
+{% extends 'base.html' %}
 
-<nav class="navbar navbar-expand-lg bg-success">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">W.I.S.Ltd</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="profile.html">Profile</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About Us</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Members
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="member_list.html">Members List</a></li>
-            <li><a class="dropdown-item" href="member_details.html">Members Details</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+{% block content %}
+
+{% block title %}
+    Member List
+{% endblock %}
 
 <h3>This a table of our existing members</h3>
 <table class="table">
   <thead>
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">First name</th>
-      <th scope="col">Last name</th>
-      <th scope="col">Membership No"</th>
-      <th scope="col">Email address</th>
-      <th scope="col">Phone number</th>
+      <th scope="col" style="background-color: #0dcaf0; border: 1px solid black">#</th>
+      <th scope="col" style="background-color: #0dcaf0; border: 1px solid black">First name</th>
+      <th scope="col" style="background-color: #0dcaf0; border: 1px solid black">Last name</th>
+      <th scope="col" style="background-color: #0dcaf0; border: 1px solid black" >Membership No"</th>
+      <th scope="col" style="background-color: #0dcaf0; border: 1px solid black">Email address</th>
+      <th scope="col" style="background-color: #0dcaf0; border: 1px solid black">Phone number</th>
 
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th scope="row">1</th>
+      <th scope="row" style="background-color: #0dcaf0; border: 1px solid black">1</th>
       <td>Mark</td>
       <td>Otto</td>
       <td>123245678</td>
@@ -59,7 +29,7 @@
       <td>0712345678</td>
     </tr>
     <tr>
-      <th scope="row">2</th>
+      <th scope="row" style="background-color: #0dcaf0; border: 1px solid black">2</th>
       <td>Jacob</td>
       <td>Thornton</td>
       <td>9087650911</td>
@@ -67,7 +37,7 @@
       <td>011345678</td>
     </tr>
     <tr>
-      <th scope="row">3</th>
+      <th scope="row" style="background-color: #0dcaf0; border: 1px solid black">3</th>
       <td>John</td>
       <td>Doe</td>
       <td>23453456678</td>
@@ -75,7 +45,7 @@
       <td>0112134567</td>
     </tr>
     <tr>
-      <th scope="row">4</th>
+      <th scope="row" style="background-color: #0dcaf0; border: 1px solid black">4</th>
       <td>Joseph</td>
       <td>Kanon</td>
       <td>098765432</td>
@@ -84,8 +54,6 @@
     </tr>
   </tbody>
 </table>
-<button>BACK</button>
-<footer>&copy 2026 Ethan-the-coder</footer>
-<script src="../../static/assets/styles/bootstrap/js/bootstrap.bundle.js"></script>
-</body>
-</html>
+<button style="margin-left: 50px; padding: 5px 10px; " class="bg-success border-black align-content-end">BACK</button>
+
+{% endblock %}

@@ -15,7 +15,7 @@
 
 /*profile.html*/
 body{
-  background-color: #0b5ed7;
+  background-color: #052c65;
 }
 .container{
   background-color: #997404;
@@ -29,7 +29,11 @@ textarea{
   max-width: 1000px;
 }
 /*about.html*/
-
+.images{
+  width: 650px;
+  position: relative;
+  margin: auto
+}
 /*member_details.html*/
 .container{
   background-color: goldenrod;
@@ -42,4 +46,7 @@ input{
 
 
 /*member_list.html*/
-
+td{
+  background-color: #0dcaf0;
+  border: 1px solid black;
+}

@@ -1,40 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Profile</title>
-      <link rel="stylesheet" href="../../static/assets/styles/bootstrap/css/bootstrap.css">
-      <link rel="stylesheet" href="../../static/assets/styles/main.css">
-</head>
-<body>
+{% extends 'base.html' %}
 
-<nav class="navbar navbar-expand-lg bg-success">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">W.I.S.Ltd</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Profile</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About Us</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Members</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="member_list.html">Members List</a></li>
-            <li><a class="dropdown-item" href="member_details.html">Members Details</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+{% block content %}
 
-<h1 id="profile h1" class="bg-gradient text-center">WISE INVESTMENTS SACCO LIMITED</h1>
+{% block title %}
+    Profile
+{% endblock %}
+
+
 <h2 id="profile h2" class="bg-secondary text-center">Welcome to Wise Investments Sacco Limited</h2>
 
 <div class="container">
@@ -43,6 +15,7 @@
       <h3>OUR LOCATION</h3>
       <iframe class="col-12" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63820.755577558186!2d36.7486115!3d-1.2962948!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f107238384bf9%3A0xae995986beacda74!2sUhuru%20Gardens!5e0!3m2!1sen!2ske!4v1770976375753!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
+
     <div class="col-md-6 col-sm-6 col-6 col-lg-6 col-xl-6 col-xxl-6 bg-success">
      <form class="row g-3">
        <div class="col-md-6">
@@ -75,9 +48,5 @@
     </div>
   </div>
 </div>
-<br><br>
-<footer class="bg-primary-subtle p-3 m-5">&copy 2026 Ethan-the-coder</footer>
-<br>
-<script src="../../static/assets/styles/bootstrap/js/bootstrap.bundle.js"></script>
-</body>
-</html>
+
+{% endblock %}

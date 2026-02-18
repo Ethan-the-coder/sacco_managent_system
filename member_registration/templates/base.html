@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<!--Static directory-->
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<!--  title tag <title></title>-->
+    <title>{% block title %}{% endblock %}</title>
+
+<!--        favicon link-->
+      <link rel="icon" type="image/png" href="{% static 'assets/images/team.png' %}">
+<!--    Styling links-->
+          <link rel="stylesheet" href="{% static 'assets/styles/main.css' %}">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+</head>
+<body>
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg bg-success">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">W.I.S.Ltd</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'profile' %}">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'about' %}">About Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Members
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{% url 'member_list' %}">Members List</a></li>
+            <li><a class="dropdown-item" href="{% url 'member_details' %}">Members Details</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--Body tag <body></body>-->
+<h1 id="profile h1" class="bg-info-subtle text-center">WISE INVESTMENTS SACCO LIMITED</h1>
+{% block content %}
+
+{% endblock %}
+
+<!--Footer-->
+<footer style="font-family: monospace" class="bg-primary-subtle p-3 m-5">&copy 2026 Ethan-the-coder</footer>
+<!--JS link-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
